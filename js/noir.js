@@ -7,20 +7,45 @@
     var st = document.createElement("style");
     st.textContent = ".hero{min-height:760px!important}.apply{min-height:auto!important}" +
       ".apply__aside{min-height:680px}.reveal{opacity:1!important;transform:none!important}" +
-      ".cursor{display:none!important}.hero__bg img{animation:none!important}";
+      ".cursor{display:none!important}.hero__bg img{animation:none!important}" +
+      ".curtain{display:none!important}";
     document.head.appendChild(st);
     document.addEventListener("DOMContentLoaded", function () {
       document.querySelectorAll(".reveal").forEach(function (r) { r.classList.add("in"); });
-      var pl = document.querySelector(".preload"); if (pl) pl.remove();
+      var c = document.querySelector(".curtain"); if (c) c.remove();
     });
   }
 
-  /* ---------- Preloader ---------- */
-  window.addEventListener("load", function () {
-    var pl = document.querySelector(".preload");
-    if (!pl) return;
-    setTimeout(function () { pl.classList.add("done"); }, reduce ? 200 : 1650);
-  });
+  /* ---------- Page-transition curtain ---------- */
+  var curtain = document.querySelector(".curtain");
+  if (curtain && !SHOT) {
+    var firstVisit = !sessionStorage.getItem("noir_seen");
+    // Reveal (lift the curtain) once the page is ready.
+    window.addEventListener("load", function () {
+      var hold = reduce ? 0 : (firstVisit ? 1000 : 300);
+      setTimeout(function () {
+        curtain.classList.add("curtain--hidden");
+        sessionStorage.setItem("noir_seen", "1");
+      }, hold);
+    });
+    // Cover with the curtain before navigating to another page in the site.
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest("a");
+      if (!a) return;
+      var href = a.getAttribute("href");
+      if (!href || href.charAt(0) === "#" || a.target === "_blank" ||
+          /^(https?:|mailto:|tel:)/i.test(href) || a.hasAttribute("download")) return;
+      if (a.origin && a.origin !== location.origin) return;
+      e.preventDefault();
+      curtain.classList.remove("curtain--hidden");
+      var go = function () { window.location.href = href; };
+      reduce ? go() : setTimeout(go, 640);
+    });
+    // Restore on back/forward from bfcache (curtain would otherwise stay covering).
+    window.addEventListener("pageshow", function (ev) {
+      if (ev.persisted) curtain.classList.add("curtain--hidden");
+    });
+  }
 
   /* ---------- Custom cursor ---------- */
   if (window.matchMedia("(hover:hover) and (pointer:fine)").matches) {
