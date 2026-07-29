@@ -8,7 +8,8 @@
     st.textContent = ".hero{min-height:760px!important}.apply{min-height:auto!important}" +
       ".apply__aside{min-height:680px}.reveal{opacity:1!important;transform:none!important}" +
       ".cursor{display:none!important}.hero__bg img{animation:none!important}" +
-      ".curtain{display:none!important}.nav__links{transition:none!important}";
+      ".curtain{display:none!important}.nav__links{transition:none!important}" +
+      ".reveal{filter:none!important}";
     document.head.appendChild(st);
     document.addEventListener("DOMContentLoaded", function () {
       document.querySelectorAll(".reveal").forEach(function (r) { r.classList.add("in"); });
@@ -94,6 +95,36 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   window.addEventListener("resize", setNavH);
   window.addEventListener("load", setNavH);
+
+  /* ---------- Scroll-driven effects: progress thread + gentle parallax ---------- */
+  var progress = document.createElement("div");
+  progress.className = "progress";
+  document.body.appendChild(progress);
+  var parallaxImgs = [];
+  if (!reduce) {
+    document.querySelectorAll(".cta-band__bg img").forEach(function (img) {
+      img.classList.add("parallax");
+      img.style.height = "122%"; img.style.top = "-11%"; img.style.position = "relative";
+      parallaxImgs.push(img);
+    });
+  }
+  var ticking = false;
+  function paintScroll() {
+    ticking = false;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (max > 0 ? (window.scrollY / max) * 100 : 0).toFixed(2) + "%";
+    for (var i = 0; i < parallaxImgs.length; i++) {
+      var img = parallaxImgs[i], band = img.parentNode;
+      var r = band.getBoundingClientRect();
+      if (r.bottom < -100 || r.top > window.innerHeight + 100) continue;
+      var c = (r.top + r.height / 2 - window.innerHeight / 2) / window.innerHeight;
+      img.style.transform = "translate3d(0," + (-c * 38).toFixed(1) + "px,0)";
+    }
+  }
+  function requestPaint() { if (!ticking) { ticking = true; requestAnimationFrame(paintScroll); } }
+  window.addEventListener("scroll", requestPaint, { passive: true });
+  window.addEventListener("resize", requestPaint);
+  paintScroll();
 
   var toggle = document.querySelector(".nav__toggle");
   var links = document.querySelector(".nav__links");
