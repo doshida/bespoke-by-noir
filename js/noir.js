@@ -17,6 +17,13 @@
         var l = document.querySelector(".nav__links"), n = document.querySelector(".nav");
         if (l) l.classList.add("open"); if (n) n.classList.add("menu-open", "solid");
       }
+      var sc = location.search.match(/[?&]scroll=(\d+)/);
+      if (sc) {
+        var nn = document.querySelector(".nav"); if (nn) nn.classList.add("solid");
+        var doScroll = function () { window.scrollTo(0, parseInt(sc[1])); };
+        window.addEventListener("load", doScroll);
+        setTimeout(doScroll, 1200);
+      }
     });
   }
 
@@ -76,8 +83,17 @@
 
   /* ---------- Nav: solidify on scroll + mobile toggle ---------- */
   var nav = document.querySelector(".nav");
-  function onScroll() { if (nav) nav.classList.toggle("solid", window.scrollY > 60); }
-  onScroll(); window.addEventListener("scroll", onScroll, { passive: true });
+  function setNavH() {
+    if (nav) document.documentElement.style.setProperty("--nav-h", nav.offsetHeight + "px");
+  }
+  function onScroll() {
+    if (nav) nav.classList.toggle("solid", window.scrollY > 60);
+    setNavH();
+  }
+  setNavH(); onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", setNavH);
+  window.addEventListener("load", setNavH);
 
   var toggle = document.querySelector(".nav__toggle");
   var links = document.querySelector(".nav__links");

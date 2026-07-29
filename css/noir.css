@@ -39,7 +39,7 @@ body{
   letter-spacing:.01em;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
-  overflow-x:hidden;
+  overflow-x:clip;
 }
 
 /* subtle film grain over everything */
@@ -334,7 +334,20 @@ h1,h2,h3,h4{font-family:var(--ff-display);font-weight:400;margin:0;line-height:1
 @media (max-width:820px){.pact{grid-template-columns:1fr;gap:1.8rem}.pact:nth-child(even) .pact__media{order:0}}
 
 /* commissions gallery */
-.filters{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.filters{
+  position:sticky;top:calc(var(--nav-h,64px) - 1px);z-index:60;
+  display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;
+  background:var(--ink);padding:.85rem 0;margin-bottom:2.2rem;
+}
+@media (max-width:1024px){
+  .filters{
+    flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    margin:0 calc(-1 * var(--pad)) 2rem;padding:.8rem var(--pad);
+    border-bottom:1px solid var(--line);scrollbar-width:none;
+  }
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:0 0 auto;white-space:nowrap}
+}
 .filters button{background:transparent;border:1px solid var(--line);color:var(--bone-2);
   font-family:var(--ff-sans);font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;
   padding:.7rem 1.3rem;cursor:pointer;transition:.4s var(--ease)}
