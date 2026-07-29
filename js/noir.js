@@ -8,11 +8,15 @@
     st.textContent = ".hero{min-height:760px!important}.apply{min-height:auto!important}" +
       ".apply__aside{min-height:680px}.reveal{opacity:1!important;transform:none!important}" +
       ".cursor{display:none!important}.hero__bg img{animation:none!important}" +
-      ".curtain{display:none!important}";
+      ".curtain{display:none!important}.nav__links{transition:none!important}";
     document.head.appendChild(st);
     document.addEventListener("DOMContentLoaded", function () {
       document.querySelectorAll(".reveal").forEach(function (r) { r.classList.add("in"); });
       var c = document.querySelector(".curtain"); if (c) c.remove();
+      if (/[?&]menu/.test(location.search)) {
+        var l = document.querySelector(".nav__links"), n = document.querySelector(".nav");
+        if (l) l.classList.add("open"); if (n) n.classList.add("menu-open", "solid");
+      }
     });
   }
 
