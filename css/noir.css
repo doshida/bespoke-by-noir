@@ -390,6 +390,62 @@ h1,h2,h3,h4{font-family:var(--ff-display);font-weight:400;margin:0;line-height:1
   .figtag{letter-spacing:.16em}
   .hero__title{font-size:clamp(2.6rem,13vw,3.4rem)}
 }
+/* ============================================================
+   LIGHT THEME — the Weddings page. Bright, warm, magazine.
+   ============================================================ */
+body.theme-light{
+  --ink:#F5EFE5;        /* page background (warm ivory) */
+  --char:#ECE3D4;       /* warm panel                   */
+  --char-2:#E4DAC8;
+  --line:#E0D6C4;       /* hairline on light            */
+  --bone:#2A241C;       /* primary text (espresso)      */
+  --bone-2:#6E6656;     /* secondary text               */
+  --bone-dim:#98907F;   /* tertiary / meta              */
+  --gold:#A9812F;       /* deeper antique gold (AA on ivory) */
+  --gold-2:#87671F;
+  --gold-dim:rgba(169,129,47,.32);
+  background:var(--ink);color:var(--bone);
+}
+body.theme-light::after{opacity:.028;mix-blend-mode:multiply}
+
+/* nav on light */
+.theme-light .nav__brand{color:var(--bone)}
+.theme-light .nav__links a{color:var(--bone-2)}
+.theme-light .nav__links a:hover,.theme-light .nav__links a.active{color:var(--bone)}
+.theme-light .nav.solid{background:rgba(245,239,229,.86);border-bottom-color:var(--line)}
+.theme-light .nav:not(.solid) .nav__links a{color:var(--bone)}
+.theme-light .nav:not(.solid) .nav__cta{background:rgba(245,239,229,.42);backdrop-filter:blur(5px)}
+.theme-light .nav__toggle span{background:var(--bone)}
+@media (max-width:940px){.theme-light .nav__links{background:var(--ink)}}
+
+/* buttons on light */
+.theme-light .btn{color:var(--bone);border-color:var(--gold)}
+.theme-light .btn::before{background:var(--gold)}
+.theme-light .btn:hover{color:#20180A}
+.theme-light .btn--solid{--bg:var(--gold);--fg:#20180A}
+.theme-light .btn--solid::before{background:#20180A}
+.theme-light .btn--solid:hover{color:var(--ink)}
+
+/* hero scrim: soft light wash instead of dark */
+.theme-light .hero__bg::after{
+  background:linear-gradient(90deg,rgba(245,239,229,.92) 0%,rgba(245,239,229,.5) 42%,rgba(245,239,229,.05) 100%),
+             linear-gradient(0deg,rgba(245,239,229,.85) 0%,rgba(245,239,229,0) 50%);
+}
+.theme-light .figtag{background:rgba(245,239,229,.66);color:var(--bone-2)}
+.theme-light .split__media--tall img,.theme-light .gallery img,.theme-light .act__media img{filter:none}
+.theme-light .card__media::after{background:linear-gradient(0deg,rgba(30,24,16,.7),transparent 55%)}
+
+/* offerings (wedding) reuse .ritual/.act but on light photos keep captions dark */
+.offer__t{font-family:var(--ff-display);font-size:1.55rem;margin:.5rem 0 .6rem}
+
+/* wedding process — bright numbered list */
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.step{background:var(--ink);padding:clamp(1.6rem,3vw,2.4rem);display:flex;gap:1.3rem;align-items:flex-start}
+.step__no{font-family:var(--ff-display);font-size:2.1rem;line-height:1;color:var(--gold);min-width:2ch}
+.step__t{font-family:var(--ff-display);font-size:1.35rem;margin:.1rem 0 .5rem}
+.step__d{color:var(--bone-2);font-size:.92rem}
+@media (max-width:640px){.steps{grid-template-columns:1fr}}
+
 .center{text-align:center}
 .mt-s{margin-top:1.2rem}.mt-m{margin-top:2rem}.mt-l{margin-top:3rem}
 .maxw{max-width:60ch}

@@ -27,13 +27,14 @@ Then open http://localhost:4599 — or just open `index.html` directly.
 | `process.html` | The Process — five-act editorial ritual |
 | `commissions.html` | Commissions — filterable portfolio (Business / Black Tie / Ceremony) |
 | `appointment.html` | Request an Appointment — the conversion form (front-end only) |
-| `journal.html` | Journal — editorial magazine cards |
+| `weddings.html` | Weddings — a bright, light-themed magazine page (groom / groomsmen / after-party + process) |
 
 ## Design system
 
 - **Palette:** ink `#0E0D0B`, charcoal `#161411`, bone `#EDE7DC`, champagne gold `#C9A96A`. No bright white anywhere.
 - **Type:** Cormorant Garamond (display) + Jost (labels/body), via Google Fonts.
-- **Motion:** gold-line monogram preloader, fade-and-rise scroll reveals, custom gold-dot cursor, hero Ken Burns, horizontal-scroll commissions. Respects `prefers-reduced-motion`.
+- **Motion:** tailor-silhouette page-transition curtain, fade-and-rise scroll reveals, custom gold-dot cursor, hero Ken Burns, horizontal-scroll commissions. Respects `prefers-reduced-motion`.
+- **Light theme:** the Weddings page uses `body.theme-light` — the same components in a warm ivory palette for a brighter, editorial feel.
 - **Shared:** `css/noir.css`, `js/noir.js`.
 
 ## Imagery
