@@ -29,6 +29,6 @@
     "eyebrow": "Yours Next",
     "heading": "Commission a suit that\nexists for you alone.",
     "buttonLabel": "Request a Private Appointment",
-    "buttonHref": "appointment.html"
+    "buttonHref": "appointment.php"
   }
 }

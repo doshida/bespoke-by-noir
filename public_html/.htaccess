@@ -1,0 +1,13 @@
+DirectoryIndex index.php index.html
+Options -Indexes
+
+# Never serve the local-dev-only router if it's accidentally uploaded.
+<Files "_devrouter.php">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</Files>

@@ -10,7 +10,7 @@
     "title": "The finest suit\nof your *life.*",
     "sub": "For the groom, his groomsmen, and the celebration after — bespoke suiting made for the one day you will remember forever.",
     "ctaPrimaryLabel": "Begin Your Wedding Suit",
-    "ctaPrimaryHref": "appointment.html",
+    "ctaPrimaryHref": "appointment.php",
     "ctaSecondaryLabel": "Explore the Occasions",
     "ctaSecondaryHref": "#offerings"
   },
@@ -28,9 +28,9 @@
     "eyebrow": "The Occasions",
     "heading": "One groom, the whole party,\nand the night that follows.",
     "items": [
-      { "image": "assets/img/wed-groom.jpg", "imageAlt": "A groom in an ivory dinner jacket", "number": "I", "title": "The Groom", "desc": "A single, uncompromising commission for the man of the day — tuxedo or suit, cut to you alone, with a lining and monogram known only to you.", "href": "appointment.html" },
-      { "image": "assets/img/wed-party.jpg", "imageAlt": "A groom with his groomsmen in coordinated blue suits", "number": "II", "title": "The Groom & Groomsmen", "desc": "A coordinated party, measured individually for a flawless fit — matching cloth, ties and pocket squares, delivered together, without the stress.", "href": "appointment.html" },
-      { "image": "assets/img/wed-afterparty.jpg", "imageAlt": "A groom celebrating at the wedding after-party", "number": "III", "title": "The After-Party", "desc": "A second look for when the jacket comes off and the night begins — a relaxed, celebratory change of pace, made to move.", "href": "appointment.html" }
+      { "image": "assets/img/wed-groom.jpg", "imageAlt": "A groom in an ivory dinner jacket", "number": "I", "title": "The Groom", "desc": "A single, uncompromising commission for the man of the day — tuxedo or suit, cut to you alone, with a lining and monogram known only to you.", "href": "appointment.php" },
+      { "image": "assets/img/wed-party.jpg", "imageAlt": "A groom with his groomsmen in coordinated blue suits", "number": "II", "title": "The Groom & Groomsmen", "desc": "A coordinated party, measured individually for a flawless fit — matching cloth, ties and pocket squares, delivered together, without the stress.", "href": "appointment.php" },
+      { "image": "assets/img/wed-afterparty.jpg", "imageAlt": "A groom celebrating at the wedding after-party", "number": "III", "title": "The After-Party", "desc": "A second look for when the jacket comes off and the night begins — a relaxed, celebratory change of pace, made to move.", "href": "appointment.php" }
     ]
   },
   "process": {
@@ -68,6 +68,6 @@
     "heading": "Your wedding begins\nwith a fitting.",
     "sub": "Reserve your date early — bespoke wedding commissions are limited each season, one client at a time.",
     "buttonLabel": "Request a Private Appointment",
-    "buttonHref": "appointment.html"
+    "buttonHref": "appointment.php"
   }
 }

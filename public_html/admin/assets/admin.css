@@ -1,0 +1,78 @@
+/* NOIR Admin — plain, legible, functional. Gold accent nods to the brand. */
+:root{
+  --ink:#1c1a17; --paper:#faf8f5; --panel:#fff; --line:#e4ded3;
+  --text:#2a241c; --muted:#6e6656; --gold:#a9812f; --gold-dark:#7d5f22;
+  --danger:#a5342a; --ok:#2c6b3f;
+  --ff:"Jost","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--ff);font-size:15px;line-height:1.5}
+a{color:var(--gold-dark)}
+h1{font-size:1.5rem;font-weight:600;margin:.2rem 0 1.4rem}
+
+/* ---- Auth screen ---- */
+body.admin-auth{display:grid;place-items:center;min-height:100vh}
+.auth-card{width:min(380px,90vw);background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:2.2rem}
+.auth-brand{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:1.4rem}
+.auth-brand span{color:var(--muted);letter-spacing:.1em}
+.auth-sub{color:var(--muted);font-size:.88rem;margin-top:-.6rem;margin-bottom:1.2rem}
+.auth-error{background:#fbe9e7;color:var(--danger);padding:.7rem 1rem;border-radius:6px;font-size:.88rem;margin-bottom:1rem}
+
+/* ---- Topbar ---- */
+.admin-topbar{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.6rem;background:var(--ink);color:#fff}
+.admin-topbar__brand{color:#fff;font-weight:600;letter-spacing:.08em;text-decoration:none}
+.admin-topbar__brand span{color:var(--gold);font-weight:400}
+.admin-topbar__right{display:flex;align-items:center;gap:1.2rem;font-size:.85rem}
+.admin-topbar__user{color:#cfc8ba}
+.admin-topbar__logout{color:#fff}
+
+.admin-main{max-width:900px;margin:0 auto;padding:2.4rem 1.6rem 5rem}
+.breadcrumb{margin:0 0 1rem;font-size:.85rem}
+.admin-note{margin-top:2.5rem;font-size:.85rem;color:var(--muted)}
+
+/* ---- Dashboard ---- */
+.collection-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
+.collection-card{display:flex;flex-direction:column;gap:.6rem;padding:1.3rem;background:var(--panel);border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--text);transition:border-color .2s,transform .2s}
+.collection-card:hover{border-color:var(--gold);transform:translateY(-1px)}
+.collection-card__label{font-weight:600}
+.collection-card__go{font-size:.8rem;color:var(--gold-dark)}
+
+/* ---- Flash messages ---- */
+.flash{padding:.8rem 1.1rem;border-radius:6px;font-size:.9rem;margin-bottom:1.4rem}
+.flash--ok{background:#e7f3ea;color:var(--ok)}
+.flash--error{background:#fbe9e7;color:var(--danger)}
+
+/* ---- Form fields ---- */
+.f{margin-bottom:1.1rem}
+.f label{display:block;font-size:.8rem;font-weight:600;color:var(--muted);margin-bottom:.35rem}
+.f input[type=text],.f input[type=password],.f textarea{
+  width:100%;padding:.6rem .7rem;border:1px solid var(--line);border-radius:6px;
+  font-family:var(--ff);font-size:.92rem;background:#fff;color:var(--text);
+}
+.f input:focus,.f textarea:focus{outline:none;border-color:var(--gold)}
+.f-hint{margin:.3rem 0 0;font-size:.78rem;color:var(--muted)}
+.f-bool .f-checkline{display:flex;align-items:center;gap:.5rem;font-size:.9rem;font-weight:500;color:var(--text)}
+.f-bool input[type=checkbox]{width:16px;height:16px}
+
+.f-image-row{display:flex;gap:1rem;align-items:flex-start}
+.f-thumb{width:110px;height:80px;object-fit:cover;border-radius:6px;border:1px solid var(--line);background:#eee}
+.f-thumb--empty{display:flex;align-items:center;justify-content:center;font-size:.7rem;color:var(--muted)}
+.f-image input[type=file]{font-size:.82rem}
+
+.f-group{border:1px solid var(--line);border-radius:8px;padding:1.1rem 1.2rem .2rem;margin-bottom:1.4rem}
+.f-group legend{font-size:.9rem;font-weight:700;padding:0 .4rem;color:var(--gold-dark)}
+.f-group .f-group{background:var(--paper)}
+
+.f-list{border:1px dashed var(--line);border-radius:8px;padding:1.1rem 1.2rem;margin-bottom:1.4rem}
+.f-list legend{font-size:.9rem;font-weight:700;padding:0 .4rem;color:var(--gold-dark)}
+.f-list-item{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:1rem 1rem .5rem;margin-bottom:1rem}
+.f-list-item--string{padding:.9rem}
+.f-remove{margin-top:.4rem;background:none;border:1px solid var(--line);border-radius:6px;color:var(--danger);font-size:.78rem;padding:.35rem .7rem;cursor:pointer}
+.f-remove:hover{border-color:var(--danger)}
+.f-add{background:none;border:1px solid var(--gold);color:var(--gold-dark);border-radius:6px;padding:.5rem 1rem;font-size:.85rem;cursor:pointer}
+.f-add:hover{background:var(--gold);color:#fff}
+template{display:none}
+
+.edit-form__actions{position:sticky;bottom:0;background:linear-gradient(0deg,var(--paper) 60%,transparent);padding:1.2rem 0 .4rem}
+.btn-primary{background:var(--ink);color:#fff;border:0;border-radius:6px;padding:.85rem 1.8rem;font-size:.9rem;font-weight:600;cursor:pointer;letter-spacing:.02em}
+.btn-primary:hover{background:var(--gold-dark)}

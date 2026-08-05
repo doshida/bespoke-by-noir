@@ -4,3 +4,4 @@ node_modules/
 .claude/
 dist/
 .astro/
+public_html/data/admin-users.json

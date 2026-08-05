@@ -1,12 +1,12 @@
 {
   "brand": "NOIR",
   "nav": [
-    { "label": "The Atelier", "href": "atelier.html" },
-    { "label": "The Process", "href": "process.html" },
-    { "label": "Commissions", "href": "commissions.html" },
-    { "label": "Weddings", "href": "weddings.html" }
+    { "label": "The Atelier", "href": "atelier.php" },
+    { "label": "The Process", "href": "process.php" },
+    { "label": "Commissions", "href": "commissions.php" },
+    { "label": "Weddings", "href": "weddings.php" }
   ],
-  "cta": { "label": "Request an Appointment", "href": "appointment.html" },
+  "cta": { "label": "Request an Appointment", "href": "appointment.php" },
   "footer": {
     "blurb": "Bespoke tailoring, by appointment only.\nAtlanta, Georgia.",
     "houseHeading": "The House",

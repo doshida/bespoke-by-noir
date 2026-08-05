@@ -20,6 +20,6 @@
     "eyebrow": "Begin",
     "heading": "The first act is a\nconversation.",
     "buttonLabel": "Request a Private Appointment",
-    "buttonHref": "appointment.html"
+    "buttonHref": "appointment.php"
   }
 }
