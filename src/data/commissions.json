@@ -1,0 +1,34 @@
+{
+  "seo": {
+    "title": "Commissions — NOIR Bespoke, Atlanta",
+    "description": "A portfolio of NOIR commissions — business, black tie, and ceremony. Bespoke suiting for the discerning individual."
+  },
+  "header": {
+    "eyebrow": "Commissions",
+    "title": "The work, and the men\nwho wear it.",
+    "sub": "A private portfolio. Each commission is cut for one body and one life — from the boardroom to the black-tie table to the day itself."
+  },
+  "filters": [
+    { "label": "All", "key": "all" },
+    { "label": "Business", "key": "business" },
+    { "label": "Black Tie", "key": "blacktie" },
+    { "label": "Ceremony", "key": "ceremony" }
+  ],
+  "items": [
+    { "image": "assets/img/csuite-portrait.jpg", "imageAlt": "CEO in a navy double-breasted bespoke suit", "occasionKey": "business", "occasionLabel": "Business", "title": "The Double-Breasted CEO", "tone": false },
+    { "image": "assets/img/commission-blacktie.jpg", "imageAlt": "Man in a black tuxedo with silk peak lapels", "occasionKey": "blacktie", "occasionLabel": "Black Tie", "title": "Midnight Tuxedo", "tone": false },
+    { "image": "assets/img/commission-business.jpg", "imageAlt": "Executive in a bespoke navy business suit", "occasionKey": "business", "occasionLabel": "Business", "title": "The Boardroom Navy", "tone": false },
+    { "image": "assets/img/commission-wedding.jpg", "imageAlt": "A groom on his wedding day", "occasionKey": "ceremony", "occasionLabel": "Ceremony", "title": "Holly & Mike", "tone": true },
+    { "image": "assets/img/csuite-desk.jpg", "imageAlt": "Executive in a grey three-piece suit at a desk", "occasionKey": "business", "occasionLabel": "Business", "title": "The Grey Three-Piece", "tone": false },
+    { "image": "assets/img/commission-ceremony.jpg", "imageAlt": "Groom in an ivory dinner jacket", "occasionKey": "ceremony", "occasionLabel": "Ceremony", "title": "The Ivory Dinner Jacket", "tone": false },
+    { "image": "assets/img/csuite-detail.jpg", "imageAlt": "Detail of a suit button and cuff", "occasionKey": "business", "occasionLabel": "Business", "title": "The Fastened Button", "tone": false },
+    { "image": "assets/img/csuite-boardroom.jpg", "imageAlt": "Executive at a boardroom table at dusk", "occasionKey": "business", "occasionLabel": "Business", "title": "The Corner Office", "tone": false },
+    { "image": "assets/img/ritual-reveal.jpg", "imageAlt": "A finished three-piece suit on a hanger", "occasionKey": "blacktie", "occasionLabel": "Black Tie", "title": "The Charcoal Three-Piece", "tone": false }
+  ],
+  "cta": {
+    "eyebrow": "Yours Next",
+    "heading": "Commission a suit that\nexists for you alone.",
+    "buttonLabel": "Request a Private Appointment",
+    "buttonHref": "appointment.html"
+  }
+}

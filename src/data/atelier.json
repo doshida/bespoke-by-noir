@@ -1,0 +1,50 @@
+{
+  "seo": {
+    "title": "The Atelier — NOIR Bespoke, Atlanta",
+    "description": "The NOIR atelier — a by-appointment bespoke tailoring house in Atlanta. Full-canvas construction, hand-padded lapels, and one client at a time."
+  },
+  "header": {
+    "eyebrow": "The Atelier",
+    "title": "Bespoke is a ritual,\nnot a purchase.",
+    "sub": "We cater to the connoisseur of fine tailoring — those who command distinction and elegance. What follows is not a shop. It is a room, a craft, and a single pair of hands kept for you alone."
+  },
+  "founder": {
+    "image": "assets/img/founder-portrait.jpg",
+    "imageAlt": "Jay, master tailor and founder of NOIR, in the atelier",
+    "figtag": "Jay · Master Tailor & Founder",
+    "eyebrow": "The Tailor",
+    "heading": "Rooted in a tradition of excellence.",
+    "body": [
+      "NOIR was founded on a single obsession — that a suit should be built, not bought. Jay trained his eye on the disciplines that machines cannot replicate: the roll of a hand-padded lapel, the balance of a shoulder, the quiet architecture beneath the cloth that lets a man forget he is wearing anything at all.",
+      "Every commission is understood as a personal narrative and reflected in every thread of the work — realised through the hands of master tailors, and delivered with the utmost discretion through our concierge service."
+    ],
+    "pullQuote": "In a world of abundance, stand singular in style."
+  },
+  "codes": {
+    "eyebrow": "House Codes",
+    "heading": "The uncompromising details.",
+    "items": [
+      { "number": "01", "title": "Full-Canvas Construction", "desc": "A floating horsehair canvas, never fused — so the jacket moulds to your chest and improves with every wear." },
+      { "number": "02", "title": "Hand-Padded Lapels", "desc": "Each lapel is stitched by hand to earn its roll — the single detail that separates bespoke from the rest." },
+      { "number": "03", "title": "One Client at a Time", "desc": "The atelier receives a single guest per appointment. Unhurried, private, and entirely yours." },
+      { "number": "04", "title": "The Fabric Library", "desc": "Over a thousand cloths from heritage English and Italian mills — worsteds, flannels, silks and stretch wools." },
+      { "number": "05", "title": "Thirty-Plus Measurements", "desc": "Posture, stance and the way you move are recorded into a body profile kept for every future commission." },
+      { "number": "06", "title": "Concierge Service", "desc": "At-home fittings, wardrobe roadmaps and, when the occasion asks, a concierge for the day itself." }
+    ]
+  },
+  "space": {
+    "eyebrow": "The Space",
+    "heading": "A private room in Atlanta.",
+    "items": [
+      { "image": "assets/img/atelier-fabricwall.jpg", "imageAlt": "A wall of suiting cloth arranged by tone", "title": "The Fabric Wall", "desc": "Cloth arranged from bone to black, mill by mill." },
+      { "image": "assets/img/atelier-mirror.jpg", "imageAlt": "An antique fitting mirror", "title": "The Fitting Mirror", "desc": "Where the suit and the man first meet." },
+      { "image": "assets/img/ritual-consultation.jpg", "imageAlt": "The consultation table", "title": "The Consultation Table", "desc": "A whisky, the swatch books, and your story." }
+    ]
+  },
+  "cta": {
+    "image": "assets/img/fabric-macro.jpg",
+    "heading": "Every NOIR suit begins\nwith a conversation.",
+    "buttonLabel": "Request a Private Appointment",
+    "buttonHref": "appointment.html"
+  }
+}

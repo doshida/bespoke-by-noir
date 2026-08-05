@@ -1,55 +1,51 @@
-# NOIR — Bespoke Atelier
+# NOIR — Bespoke Atelier (Astro + CMS)
 
-A luxury redesign of [bespokebynoir.com](https://bespokebynoir.com) — a by-appointment
-bespoke tailoring atelier in Atlanta. Rebuilt as a dark, cinematic, editorial
-experience that positions NOIR as a **bespoke house first** (individuals, C-suite,
-executives), with weddings as one occasion among several.
+A luxury bespoke-tailoring website for [bespokebynoir.com](https://bespokebynoir.com),
+built with **Astro** (static output) and edited through **Pages CMS** — a friendly,
+no-code admin panel. Content lives as JSON; publishing rebuilds and deploys automatically.
 
-Static, dependency-free (vanilla HTML/CSS/JS). No build step, no framework, no cart.
-One action throughout: **Request a Private Appointment.**
+**Live:** https://doshida.github.io/bespoke-by-noir/
 
-## Run
+## Editing content (for the atelier)
 
-Any static server from this folder, e.g.:
+1. Go to **https://app.pagescms.org** and **Sign in with GitHub**.
+2. Open the **bespoke-by-noir** project.
+3. Pick a page in the sidebar (Home, The Atelier, Weddings, …), edit any text or
+   swap any image with the picker, then click **Save**.
+4. The site rebuilds and goes live on its own in ~1 minute.
+
+Notes for editors:
+- In headline fields, wrap a word in `*asterisks*` to make it **gold italic**, and press
+  Enter for a line break.
+- Toggle **"Dim & warm this photo"** on any *bright* commission/wedding image so it sits in
+  the dark palette.
+
+## How it's built
+
+| | |
+|---|---|
+| Framework | Astro (static site generator) — output is plain fast HTML |
+| Content | JSON files in `src/data/` (one per page + `site.json` for nav/footer) |
+| Templates | `src/pages/*.astro` render each page from its JSON via `src/layouts/Layout.astro` |
+| Styles / JS / images | `public/css`, `public/js`, `public/assets/img` (served as-is) |
+| CMS | Pages CMS, configured by `.pages.yml` |
+| Deploy | GitHub Actions (`.github/workflows/deploy.yml`) → GitHub Pages on every push to `main` |
+
+Design system (palette, type, motion) is unchanged and documented in `public/css/noir.css`.
+
+## Local development
 
 ```bash
-python3 -m http.server 4599
+npm install
+npm run dev      # http://localhost:4321
+npm run build    # outputs to dist/
+npm run preview  # serve the production build
 ```
 
-Then open http://localhost:4599 — or just open `index.html` directly.
+Editing a JSON file in `src/data/` and refreshing shows the change — the CMS just does
+this for you through a UI and commits it to GitHub.
 
-## Pages
+## Adding a new image without the CMS
 
-| File | Page |
-|------|------|
-| `index.html` | Home — hero, invitation, the ritual, the atelier, C-suite wardrobe, commissions, testimonials, CTA |
-| `atelier.html` | The Atelier — founder story, house codes, the space |
-| `process.html` | The Process — five-act editorial ritual |
-| `commissions.html` | Commissions — filterable portfolio (Business / Black Tie / Ceremony) |
-| `appointment.html` | Request an Appointment — the conversion form (front-end only) |
-| `weddings.html` | Weddings — a bright, light-themed magazine page (groom / groomsmen / after-party + process) |
-
-## Design system
-
-- **Palette:** ink `#0E0D0B`, charcoal `#161411`, bone `#EDE7DC`, champagne gold `#C9A96A`. No bright white anywhere.
-- **Type:** Cormorant Garamond (display) + Jost (labels/body), via Google Fonts.
-- **Motion:** tailor-silhouette page-transition curtain, fade-and-rise scroll reveals, custom gold-dot cursor, hero Ken Burns, horizontal-scroll commissions. Respects `prefers-reduced-motion`.
-- **Light theme:** the Weddings page uses `body.theme-light` — the same components in a warm ivory palette for a brighter, editorial feel.
-- **Shared:** `css/noir.css`, `js/noir.js`.
-
-## Imagery
-
-`assets/img/` — cinematic low-key photography generated with Gemini (Nano Banana Pro),
-plus the one real client photo carried over from the current site
-(`commission-wedding.jpg`, tonally harmonised via the `.tone-noir` class).
-To regenerate or add photography, replace files in `assets/img/` keeping the same names.
-
-> `?shot=1` on any URL disables the preloader and forces all reveals visible —
-> used only for full-page screenshots.
-
-## Notes for going live
-
-- The appointment form is front-end only — wire `js/noir.js` `form.submit` to an
-  email/Acuity/CRM endpoint, or point it at the studio's booking backend.
-- Update the footer email (`atelier@bespokebynoir.com`) and Instagram link.
-- Legal links live in the footer by design (kept out of the header).
+Drop the file into `public/assets/img/` and reference it as `assets/img/your-file.jpg`
+in the relevant `src/data/*.json`.
