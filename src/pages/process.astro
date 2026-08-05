@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { rich } from '../lib/text.js';
+import d from '../data/process.json';
+---
+<Layout title={d.seo.title} description={d.seo.description} active="process.html">
+
+<section class="phead wrap">
+  <span class="eyebrow reveal">{d.header.eyebrow}</span>
+  <h1 class="h-xl phead__title reveal" data-d="1" set:html={rich(d.header.title)}></h1>
+  <p class="phead__sub reveal" data-d="2">{d.header.sub}</p>
+</section>
+
+<section class="section">
+  <div class="wrap acts">
+    {d.acts.map((act) => (
+      <article class="pact reveal">
+        <div class="pact__media"><img src={act.image} alt={act.imageAlt}></div>
+        <div>
+          <div class="pact__no">{act.number}</div>
+          <h2 class="h-lg pact__t">{act.title}</h2>
+          <p class="pact__d muted">{act.desc}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="cta-band__bg"><img src={d.cta.image} alt=""></div>
+  <div class="wrap center">
+    <span class="eyebrow center reveal">{d.cta.eyebrow}</span>
+    <h2 class="display reveal mt-s" style="font-size:clamp(2.2rem,5.5vw,4.4rem)" set:html={rich(d.cta.heading)}></h2>
+    <div class="reveal mt-l" data-d="1"><a class="btn btn--solid" href={d.cta.buttonHref}><span>{d.cta.buttonLabel}</span></a></div>
+  </div>
+</section>
+
+</Layout>

@@ -1,0 +1,18 @@
+{
+  "brand": "NOIR",
+  "nav": [
+    { "label": "The Atelier", "href": "atelier.html" },
+    { "label": "The Process", "href": "process.html" },
+    { "label": "Commissions", "href": "commissions.html" },
+    { "label": "Weddings", "href": "weddings.html" }
+  ],
+  "cta": { "label": "Request an Appointment", "href": "appointment.html" },
+  "footer": {
+    "blurb": "Bespoke tailoring, by appointment only.\nAtlanta, Georgia.",
+    "houseHeading": "The House",
+    "commissionHeading": "Commission",
+    "email": "atelier@bespokebynoir.com",
+    "instagram": "#",
+    "copyright": "© NOIR Bespoke · Atlanta"
+  }
+}

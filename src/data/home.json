@@ -1,0 +1,90 @@
+{
+  "seo": {
+    "title": "NOIR — Bespoke Tailoring, Atlanta · By Appointment Only",
+    "description": "NOIR is a by-appointment bespoke tailoring atelier in Atlanta. A suit that exists for one man only — commissioned, not bought. Request a private appointment."
+  },
+  "hero": {
+    "image": "assets/img/hero-atelier.jpg",
+    "imageAlt": "The NOIR atelier at night — fitting mirror, leather chair and a wall of suiting cloth in warm light",
+    "eyebrow": "By Appointment Only · Est. Atlanta",
+    "title": "A suit that exists\nfor *one man* only.",
+    "sub": "Bespoke tailoring for those who command distinction — cut by hand, to your measure alone. One client at a time, by appointment only.",
+    "ctaPrimaryLabel": "Request a Private Appointment",
+    "ctaPrimaryHref": "appointment.html",
+    "ctaSecondaryLabel": "Enter the Atelier",
+    "ctaSecondaryHref": "atelier.html"
+  },
+  "invitation": {
+    "image": "assets/img/fabric-macro.jpg",
+    "imageAlt": "Macro of cloth on the tailor's bench",
+    "figtag": "On the tailor's bench · cloth from heritage mills",
+    "eyebrow": "The Invitation",
+    "lead": "At NOIR, bespoke suiting is an uncompromising art — an intimate journey into a personal style, realised through the hands of master tailors.",
+    "body": "Each suit is a personal hallmark of quality and sophistication, cut to a single body and a single life. In a world of abundance, we make one thing exceptionally well: the suit that is unmistakably yours — delivered with the utmost discretion through our concierge service.",
+    "linkLabel": "Our Philosophy",
+    "linkHref": "atelier.html"
+  },
+  "ritual": {
+    "eyebrow": "The Ritual",
+    "heading": "Six chapters, one composed man.",
+    "acts": [
+      { "image": "assets/img/ritual-consultation.jpg", "imageAlt": "A private consultation table with fabric books and whisky", "number": "I — III", "title": "The Consultation", "desc": "A private conversation over coffee or whisky — style, occasion, and the story the suit must tell." },
+      { "image": "assets/img/ritual-fittings.jpg", "imageAlt": "A muslin toile pinned on a tailor's form", "number": "IV — V", "title": "The Fittings", "desc": "Thirty measurements, a muslin, then refinements — until the cloth learns the way you move." },
+      { "image": "assets/img/ritual-reveal.jpg", "imageAlt": "A finished charcoal suit on a wooden hanger", "number": "VI", "title": "The Reveal", "desc": "The final fitting — and, should the occasion ask, a concierge who tends to the day itself." }
+    ],
+    "buttonLabel": "The Full Process",
+    "buttonHref": "process.html"
+  },
+  "atelierBand": {
+    "eyebrow": "The Atelier · Atlanta",
+    "heading": "A room kept for\none guest at a time.",
+    "body": "Behind a discreet door in Atlanta, the atelier receives a single client at a time. There is no rail to browse, no queue — only your tailor, a wall of cloth from English and Italian mills, and an espresso or a whisky poured on arrival. The address is part of the luxury; the privacy, entirely the point.",
+    "sealText": "By\nAppointment\nOnly",
+    "locationLabel": "The Atelier",
+    "location": "Atlanta, Georgia",
+    "linkLabel": "Request the address",
+    "linkHref": "appointment.html",
+    "image": "assets/img/atelier-mirror.jpg",
+    "imageAlt": "An antique three-panel fitting mirror in the dark atelier"
+  },
+  "distinction": {
+    "image": "assets/img/csuite-portrait.jpg",
+    "imageAlt": "A chief executive in a bespoke navy double-breasted suit",
+    "figtag": "The double-breasted navy · for the office",
+    "eyebrow": "For Those Who Command a Room",
+    "heading": "The wardrobe of\na serious man.",
+    "body": "Bespoke is the everyday discipline of the C-suite and the founder — the navy that carries a negotiation, the charcoal that closes it, the grey three-piece that needs no introduction. We build a considered wardrobe around your calendar and keep your measure on file, so the next commission begins where the last one ended.",
+    "bullets": [
+      "Business & travel suiting, built for the way you work",
+      "A personal body profile, kept for every future order",
+      "At-home & in-office fittings by concierge"
+    ],
+    "linkLabel": "See Business Commissions",
+    "linkHref": "commissions.html"
+  },
+  "commissions": {
+    "eyebrow": "Recent Commissions",
+    "heading": "The work, and the men\nwho wear it.",
+    "linkLabel": "The Full Portfolio",
+    "linkHref": "commissions.html",
+    "cards": [
+      { "image": "assets/img/commission-business.jpg", "imageAlt": "Executive in a bespoke navy business suit", "occasion": "Business", "title": "The Boardroom Navy", "cloth": "Italian stretch wool · full canvas", "tone": false, "href": "commissions.html" },
+      { "image": "assets/img/commission-blacktie.jpg", "imageAlt": "Man in a black tuxedo with silk peak lapels", "occasion": "Black Tie", "title": "Midnight Tuxedo", "cloth": "Silk peak lapel · barathea", "tone": false, "href": "commissions.html" },
+      { "image": "assets/img/commission-wedding.jpg", "imageAlt": "A groom photographed on his wedding day", "occasion": "Ceremony", "title": "Holly & Mike", "cloth": "Three-piece · custom lining", "tone": true, "href": "commissions.html" },
+      { "image": "assets/img/commission-ceremony.jpg", "imageAlt": "Groom in an ivory dinner jacket", "occasion": "Ceremony", "title": "The Ivory Dinner Jacket", "cloth": "Grosgrain shawl · silk", "tone": false, "href": "commissions.html" }
+    ]
+  },
+  "testimonials": [
+    { "quote": "Absolute perfection. Jay's attention to detail is unmatched — a true work of art. The compliments were insane. I would recommend him one hundred percent.", "by": "Mike A. — The Wedding Suit" },
+    { "quote": "The suit is absolutely incredible. Any expectation we had was completely blown away. He was personally invested in our vision. If you are considering it, do not hesitate for a second.", "by": "Taylor F. — A Milestone Commission" },
+    { "quote": "Excellent silhouettes, cut, sewing, craftsmanship, and fabric choice.", "by": "Cedric B. — Business Bespoke" }
+  ],
+  "cta": {
+    "image": "assets/img/hands-tailor.jpg",
+    "eyebrow": "Begin",
+    "heading": "Your commission\nbegins with a conversation.",
+    "sub": "Private and unhurried — typically sixty to ninety minutes. One client at a time, by appointment only.",
+    "buttonLabel": "Request a Private Appointment",
+    "buttonHref": "appointment.html"
+  }
+}

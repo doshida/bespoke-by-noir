@@ -1,0 +1,25 @@
+{
+  "seo": {
+    "title": "The Process — NOIR Bespoke, Atlanta",
+    "description": "The NOIR bespoke process, told as a five-act ritual — consultation, cloth, measure, fittings, and the reveal."
+  },
+  "header": {
+    "eyebrow": "The Process",
+    "title": "Five acts, from\nconversation to cloth.",
+    "sub": "A commission unfolds slowly and deliberately. Each stage is private, unhurried, and held at the Atlanta atelier — one client at a time."
+  },
+  "acts": [
+    { "number": "01", "image": "assets/img/ritual-consultation.jpg", "imageAlt": "The consultation table with fabric books and whisky", "title": "The Consultation", "desc": "We begin with a private conversation over coffee or whisky — at the studio or by appointment near you. We explore the occasion, your wardrobe, the way you live and move, and the story the suit must tell. Nothing is measured yet; first, we understand." },
+    { "number": "02", "image": "assets/img/ritual-cloth.jpg", "imageAlt": "The cloth library of English and Italian mills", "title": "The Cloth", "desc": "From over a thousand fabrics — worsteds, flannels, silks and stretch wools from heritage English and Italian mills — we choose the cloth, the weight, the lining, and the details: horn or metal buttons, the lapel, the pockets, a monogram spoken only to you." },
+    { "number": "03", "image": "assets/img/ritual-measure.jpg", "imageAlt": "A tailor taking shoulder measurements", "title": "The Measure", "desc": "Thirty-plus precise measurements, and more than numbers — posture, stance, the fall of a shoulder, the way you carry yourself. It becomes a body profile, kept for every commission that follows, so the second suit begins where the first left off." },
+    { "number": "04", "image": "assets/img/ritual-fittings.jpg", "imageAlt": "A muslin toile pinned on a tailor's form", "title": "The Fittings", "desc": "A muslin fitting first — the suit in rehearsal — then the refinements. We adjust and re-adjust across two fittings and micro-adjustments, until the balance is exact and the cloth learns your body rather than the other way around." },
+    { "number": "05", "image": "assets/img/ritual-reveal.jpg", "imageAlt": "The finished suit on a wooden hanger", "title": "The Reveal & Beyond", "desc": "The final fitting, and the suit delivered in a premium NOIR garment bag. For those who ask, the concierge continues — at-home fittings, a wardrobe roadmap, and, for the wedding, coordination of the day itself down to the smallest thread." }
+  ],
+  "cta": {
+    "image": "assets/img/atelier-mirror.jpg",
+    "eyebrow": "Begin",
+    "heading": "The first act is a\nconversation.",
+    "buttonLabel": "Request a Private Appointment",
+    "buttonHref": "appointment.html"
+  }
+}

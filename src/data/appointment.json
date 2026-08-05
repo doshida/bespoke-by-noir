@@ -1,0 +1,25 @@
+{
+  "seo": {
+    "title": "Request an Appointment — NOIR Bespoke, Atlanta",
+    "description": "Begin your commission. Request a private appointment at the NOIR atelier in Atlanta — one client at a time, by appointment only."
+  },
+  "aside": {
+    "image": "assets/img/appointment-side.jpg",
+    "imageAlt": "The private entrance to the NOIR atelier",
+    "eyebrow": "The Atelier · Atlanta",
+    "lead": "Behind a discreet door, a room kept for one."
+  },
+  "form": {
+    "eyebrow": "Begin Your Commission",
+    "title": "Begin your\ncommission.",
+    "reassurance": "Appointments are private and unhurried — typically sixty to ninety minutes. One client at a time, by appointment only.",
+    "occasions": ["Business & Everyday Bespoke", "Black Tie", "Wedding", "Personal Milestone"],
+    "submitLabel": "Request Appointment",
+    "disclaimer": "You will not be added to a list. This is a request for a private conversation."
+  },
+  "confirm": {
+    "heading": "Your request has been received.",
+    "body": "The atelier will confirm your appointment personally — expect a note from us shortly. We look forward to receiving you.",
+    "linkLabel": "Return Home"
+  }
+}

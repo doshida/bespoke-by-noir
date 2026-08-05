@@ -1,0 +1,73 @@
+{
+  "seo": {
+    "title": "Weddings — NOIR Bespoke, Atlanta",
+    "description": "Bespoke wedding suiting by NOIR, Atlanta — for the groom, the groomsmen, and the after-party. A suit made for the happiest day, by appointment only."
+  },
+  "hero": {
+    "image": "assets/img/wed-hero.jpg",
+    "imageAlt": "A groom and his groomsmen in coordinated bespoke suits on a bright wedding day",
+    "eyebrow": "Weddings · By Appointment",
+    "title": "The finest suit\nof your *life.*",
+    "sub": "For the groom, his groomsmen, and the celebration after — bespoke suiting made for the one day you will remember forever.",
+    "ctaPrimaryLabel": "Begin Your Wedding Suit",
+    "ctaPrimaryHref": "appointment.html",
+    "ctaSecondaryLabel": "Explore the Occasions",
+    "ctaSecondaryHref": "#offerings"
+  },
+  "invitation": {
+    "image": "assets/img/wed-real-groom.jpg",
+    "imageAlt": "A groom in a bespoke tuxedo on his wedding day",
+    "figtag": "A NOIR groom · Atlanta",
+    "eyebrow": "The Happiest Commission",
+    "lead": "On the best day of your life, you should wear something made only for you — and for no one else, ever.",
+    "body": "A wedding suit is worn in every photograph you will keep for the rest of your life. We treat it that way. From the first conversation to the final press, your commission is unhurried, personal, and built by hand — so that when you turn to face the room, the suit is the last thing you have to think about.",
+    "linkLabel": "How It Works",
+    "linkHref": "#process"
+  },
+  "offerings": {
+    "eyebrow": "The Occasions",
+    "heading": "One groom, the whole party,\nand the night that follows.",
+    "items": [
+      { "image": "assets/img/wed-groom.jpg", "imageAlt": "A groom in an ivory dinner jacket", "number": "I", "title": "The Groom", "desc": "A single, uncompromising commission for the man of the day — tuxedo or suit, cut to you alone, with a lining and monogram known only to you.", "href": "appointment.html" },
+      { "image": "assets/img/wed-party.jpg", "imageAlt": "A groom with his groomsmen in coordinated blue suits", "number": "II", "title": "The Groom & Groomsmen", "desc": "A coordinated party, measured individually for a flawless fit — matching cloth, ties and pocket squares, delivered together, without the stress.", "href": "appointment.html" },
+      { "image": "assets/img/wed-afterparty.jpg", "imageAlt": "A groom celebrating at the wedding after-party", "number": "III", "title": "The After-Party", "desc": "A second look for when the jacket comes off and the night begins — a relaxed, celebratory change of pace, made to move.", "href": "appointment.html" }
+    ]
+  },
+  "process": {
+    "eyebrow": "The Process",
+    "heading": "From the first fitting\nto the first dance.",
+    "sub": "Begin four to six months ahead. Every stage is private and unhurried — and we keep the timeline so you don't have to.",
+    "steps": [
+      { "number": "I", "title": "The Consultation", "desc": "A conversation over coffee or whisky about the day, the venue, the palette, and the look you want to remember." },
+      { "number": "II", "title": "The Cloth", "desc": "Choose from over a thousand fabrics from English and Italian mills — with linings, buttons, and a hidden monogram." },
+      { "number": "III", "title": "The Measure", "desc": "Thirty-plus measurements and a body profile — with the whole party measured individually for a matched fit." },
+      { "number": "IV", "title": "The Fittings", "desc": "A muslin fitting, then refinements, with micro-adjustments as the date approaches so the fit is exact." },
+      { "number": "V", "title": "The Reveal", "desc": "The finished suit, pressed and delivered in a premium NOIR wedding garment box — the party's coordinated and ready." },
+      { "number": "VI", "title": "Wedding-Day Concierge", "desc": "Optional white-glove service — deadline reminders, color matching, groomsmen coordination, and calm on the day itself." }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Real Weddings",
+    "heading": "Moments, made to last.",
+    "items": [
+      { "image": "assets/img/commission-wedding.jpg", "imageAlt": "Bride and groom on their wedding day", "occasionLabel": "Holly & Mike", "title": "The Green Wedding Suit" },
+      { "image": "assets/img/wed-real-details.jpg", "imageAlt": "Flat-lay of the groom's wedding details", "occasionLabel": "The Details", "title": "Shoes, Tie & Boutonnière" },
+      { "image": "assets/img/wed-groom.jpg", "imageAlt": "Groom in an ivory dinner jacket", "occasionLabel": "The Groom", "title": "Ivory Dinner Jacket" },
+      { "image": "assets/img/wed-real-groom.jpg", "imageAlt": "A groom in a bespoke tuxedo", "occasionLabel": "The Groom", "title": "Emerald & Black Tie" },
+      { "image": "assets/img/wed-party.jpg", "imageAlt": "Groom and groomsmen in blue suits", "occasionLabel": "The Party", "title": "Groomsmen in Blue" },
+      { "image": "assets/img/wed-detail.jpg", "imageAlt": "Wedding accessories flat-lay", "occasionLabel": "The Details", "title": "The Finishing Touches" }
+    ]
+  },
+  "testimonials": [
+    { "quote": "Absolute perfection when creating my suit for my wedding. Jay's attention to detail is unmatched — he created a true work of art. The compliments I received were insane.", "by": "Mike A. — His Wedding" },
+    { "quote": "The suit is absolutely incredible. Any expectation we had was completely blown away. Jay was personally invested in our vision and our moment. That personal touch sealed the whole experience.", "by": "Taylor F. — The Wedding Party" }
+  ],
+  "cta": {
+    "image": "assets/img/wed-afterparty.jpg",
+    "eyebrow": "Begin",
+    "heading": "Your wedding begins\nwith a fitting.",
+    "sub": "Reserve your date early — bespoke wedding commissions are limited each season, one client at a time.",
+    "buttonLabel": "Request a Private Appointment",
+    "buttonHref": "appointment.html"
+  }
+}

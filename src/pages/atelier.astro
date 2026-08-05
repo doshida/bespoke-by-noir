@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { rich } from '../lib/text.js';
+import d from '../data/atelier.json';
+---
+<Layout title={d.seo.title} description={d.seo.description} active="atelier.html">
+
+<section class="phead wrap">
+  <span class="eyebrow reveal">{d.header.eyebrow}</span>
+  <h1 class="h-xl phead__title reveal" data-d="1" set:html={rich(d.header.title)}></h1>
+  <p class="phead__sub reveal" data-d="2">{d.header.sub}</p>
+</section>
+
+<!-- Founder -->
+<section class="section">
+  <div class="wrap split split--wideL">
+    <div class="split__media split__media--tall reveal">
+      <img src={d.founder.image} alt={d.founder.imageAlt}>
+      <span class="figtag">{d.founder.figtag}</span>
+    </div>
+    <div>
+      <span class="eyebrow reveal">{d.founder.eyebrow}</span>
+      <h2 class="h-lg reveal mt-s" data-d="1">{d.founder.heading}</h2>
+      {d.founder.body.map((p) => <p class="muted reveal mt-m" data-d="2">{p}</p>)}
+      <p class="lead reveal mt-l" data-d="3" style="font-size:1.4rem">&ldquo;{d.founder.pullQuote}&rdquo;</p>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- House codes -->
+<section class="section">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:clamp(2.5rem,6vh,4rem)">
+      <span class="eyebrow center reveal">{d.codes.eyebrow}</span>
+      <h2 class="h-xl reveal mt-s" data-d="1">{d.codes.heading}</h2>
+    </div>
+    <div class="codes">
+      {d.codes.items.map((c, i) => (
+        <div class="code reveal" data-d={i % 3 > 0 ? String(i % 3) : undefined}>
+          <div class="code__no">{c.number}</div>
+          <div class="code__t">{c.title}</div>
+          <p class="code__d">{c.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- The space -->
+<section class="section band">
+  <div class="wrap">
+    <span class="eyebrow center reveal" style="display:flex;justify-content:center">{d.space.eyebrow}</span>
+    <h2 class="h-xl center reveal mt-s" data-d="1" style="margin-bottom:clamp(2.5rem,6vh,4rem)">{d.space.heading}</h2>
+    <div class="ritual">
+      {d.space.items.map((s, i) => (
+        <div class="act reveal" data-d={i > 0 ? String(i) : undefined}>
+          <div class="act__media" style="aspect-ratio:3/4"><img src={s.image} alt={s.imageAlt}></div>
+          <div class="act__t" style="font-size:1.3rem">{s.title}</div>
+          <p class="act__d">{s.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-band">
+  <div class="cta-band__bg"><img src={d.cta.image} alt=""></div>
+  <div class="wrap center">
+    <h2 class="display reveal" style="font-size:clamp(2.2rem,5.5vw,4.4rem)" set:html={rich(d.cta.heading)}></h2>
+    <div class="reveal mt-l" data-d="1"><a class="btn btn--solid" href={d.cta.buttonHref}><span>{d.cta.buttonLabel}</span></a></div>
+  </div>
+</section>
+
+</Layout>
